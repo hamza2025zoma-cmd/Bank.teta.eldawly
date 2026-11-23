@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="purple" data-fx="clouds">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#2e1065">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teta Amal International Bank</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:var(--card);--gb:var(--sep);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+/* styles */
+html[data-theme=aurora]{color-scheme:dark;--bg:#0b1020;--grad:radial-gradient(60% 40% at 15% 8%,rgba(52,211,153,.55),transparent 70%),radial-gradient(55% 40% at 88% 28%,rgba(168,85,247,.55),transparent 70%),radial-gradient(70% 45% at 50% 100%,rgba(59,130,246,.5),transparent 70%);--card:rgba(255,255,255,.12);--cardb:rgba(255,255,255,.22);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(0,0,0,.25);--fill:rgba(255,255,255,.12);--t:#fff;--t2:rgba(255,255,255,.7);--sep:rgba(255,255,255,.2);--tint:#a7f3d0;--tint-bg:rgba(255,255,255,.16);--main-bg:linear-gradient(135deg,#34d399,#6366f1);--main-t:#fff;--ok:#6ee7b7;--no:#fda4af;--no-bg:rgba(255,255,255,.14)}
+html[data-theme=ocean]{color-scheme:dark;--bg:#03045e;--grad:linear-gradient(180deg,#03045e 0%,#0077b6 55%,#90e0ef 100%);--card:rgba(255,255,255,.16);--cardb:rgba(255,255,255,.3);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(0,30,80,.3);--fill:rgba(255,255,255,.16);--t:#fff;--t2:rgba(255,255,255,.75);--sep:rgba(255,255,255,.25);--tint:#caf0f8;--tint-bg:rgba(255,255,255,.2);--main-bg:linear-gradient(135deg,#00b4d8,#0096c7);--main-t:#fff;--ok:#b7ffd8;--no:#ffb3c1;--no-bg:rgba(255,255,255,.16)}
+html[data-theme=candy]{color-scheme:light;--bg:#fff1f6;--grad:radial-gradient(50% 35% at 15% 10%,rgba(255,120,170,.55),transparent 70%),radial-gradient(50% 35% at 90% 50%,rgba(255,190,90,.5),transparent 70%),radial-gradient(60% 40% at 30% 100%,rgba(90,220,170,.5),transparent 70%);--card:rgba(255,255,255,.45);--cardb:rgba(255,255,255,.95);--blur:28px;--r:26px;--shadow:0 8px 24px rgba(236,72,153,.14);--fill:rgba(255,235,243,.9);--t:#3b2a4a;--t2:#8a7a99;--sep:rgba(60,30,80,.1);--tint:#db2777;--tint-bg:rgba(236,72,153,.12);--main-bg:linear-gradient(135deg,#f472b6,#fb923c);--main-t:#fff;--ok:#16a34a;--no:#e11d48;--no-bg:rgba(225,29,72,.1)}
+html[data-theme=space]{color-scheme:dark;--bg:#05010f;--grad:radial-gradient(70% 40% at 20% 5%,rgba(124,58,237,.6),transparent 70%),radial-gradient(60% 40% at 90% 60%,rgba(37,99,235,.45),transparent 70%),radial-gradient(60% 35% at 40% 100%,rgba(190,24,93,.35),transparent 70%);--card:rgba(40,25,90,.38);--cardb:rgba(190,170,255,.35);--blur:28px;--r:26px;--shadow:0 0 24px rgba(139,92,246,.18);--fill:rgba(255,255,255,.08);--t:#f5f3ff;--t2:#a99fd1;--sep:rgba(167,139,250,.2);--tint:#c4b5fd;--tint-bg:rgba(139,92,246,.2);--main-bg:linear-gradient(135deg,#8b5cf6,#6366f1);--main-t:#fff;--ok:#6ee7b7;--no:#fb7185;--no-bg:rgba(251,113,133,.16)}
+html[data-theme=gold]{color-scheme:dark;--bg:#0b0b0b;--grad:radial-gradient(55% 35% at 15% 8%,rgba(245,200,80,.55),transparent 70%),radial-gradient(50% 35% at 90% 45%,rgba(180,110,20,.5),transparent 70%),radial-gradient(60% 40% at 30% 100%,rgba(120,70,10,.55),transparent 70%);--card:rgba(40,32,12,.4);--cardb:rgba(255,215,120,.35);--blur:28px;--r:26px;--shadow:0 6px 22px rgba(0,0,0,.5);--fill:#211e17;--t:#f3ead2;--t2:#a39770;--sep:rgba(212,175,55,.18);--tint:#e6c15a;--tint-bg:rgba(212,175,55,.15);--main-bg:linear-gradient(135deg,#f5d77a,#b8860b);--main-t:#1a1200;--ok:#86efac;--no:#ff8a8a;--no-bg:rgba(255,138,138,.14)}
+html[data-theme=sky]{color-scheme:light;--bg:#bae6fd;--grad:linear-gradient(180deg,#7dd3fc 0%,#bae6fd 50%,#f0f9ff 100%);--card:rgba(255,255,255,.4);--cardb:rgba(255,255,255,.9);--blur:28px;--r:26px;--shadow:0 8px 24px rgba(2,100,160,.15);--fill:rgba(224,242,254,.9);--t:#0c2d48;--t2:#4b7391;--sep:rgba(12,45,72,.1);--tint:#0369a1;--tint-bg:rgba(2,132,199,.12);--main-bg:linear-gradient(135deg,#38bdf8,#0284c7);--main-t:#fff;--ok:#15803d;--no:#dc2626;--no-bg:rgba(220,38,38,.1)}
+html[data-theme=neon]{color-scheme:dark;--bg:#07060f;--grad:radial-gradient(60% 40% at 12% 0%,rgba(255,0,200,.35),transparent 70%),radial-gradient(60% 40% at 90% 100%,rgba(0,229,255,.3),transparent 70%);--card:rgba(30,12,60,.4);--cardb:rgba(120,240,255,.4);--blur:28px;--r:26px;--shadow:0 0 18px rgba(0,229,255,.18);--fill:rgba(255,255,255,.07);--t:#fff;--t2:#a5a0c8;--sep:rgba(0,229,255,.2);--tint:#00e5ff;--tint-bg:rgba(0,229,255,.12);--main-bg:linear-gradient(135deg,#ff00c8,#00b8ff);--main-t:#fff;--ok:#39ff88;--no:#ff4d8d;--no-bg:rgba(255,77,141,.16)}
+html[data-theme=sunset]{color-scheme:dark;--bg:#4a1942;--grad:linear-gradient(160deg,#4a1942 0%,#c2410c 60%,#fbbf24 100%);--card:rgba(255,255,255,.15);--cardb:rgba(255,255,255,.3);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(60,10,30,.25);--fill:rgba(255,255,255,.15);--t:#fff;--t2:rgba(255,255,255,.75);--sep:rgba(255,255,255,.25);--tint:#fff;--tint-bg:rgba(255,255,255,.2);--main-bg:linear-gradient(135deg,#fb923c,#ec4899);--main-t:#fff;--ok:#bbf7d0;--no:#fecdd3;--no-bg:rgba(255,255,255,.16)}
+html[data-theme=purple]{color-scheme:dark;--bg:#2e1065;--grad:linear-gradient(180deg,#2e1065 0%,#5b21b6 45%,#a78bfa 100%);--card:rgba(255,255,255,.16);--cardb:rgba(255,255,255,.3);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(20,0,60,.3);--fill:rgba(255,255,255,.14);--t:#fff;--t2:rgba(255,255,255,.72);--sep:rgba(255,255,255,.22);--tint:#fff;--tint-bg:rgba(255,255,255,.22);--main-bg:rgba(255,255,255,.38);--main-t:#fff;--ok:#7dffb2;--no:#ff8a9b;--no-bg:rgba(255,255,255,.18)}
+html[data-theme=classic]{color-scheme:dark;--bg:#1b1464;--grad:linear-gradient(135deg,#1b1464,#0b6e8a);--card:rgba(255,255,255,.14);--cardb:rgba(255,255,255,.35);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(0,0,0,.2);--fill:rgba(255,255,255,.12);--t:#fff;--t2:rgba(255,255,255,.7);--sep:rgba(255,255,255,.18);--tint:#fff;--tint-bg:rgba(255,255,255,.22);--main-bg:linear-gradient(135deg,rgba(255,255,255,.4),rgba(255,255,255,.15));--main-t:#fff;--ok:#7dffb2;--no:#ff8a9b;--no-bg:rgba(255,255,255,.16)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{height:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;background:var(--bg)}
+body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Arabic","Cairo",system-ui,sans-serif;color:var(--t);background:var(--bg);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:var(--grad)}
+main{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:14px 16px 40px}
+.glass{position:relative;background:var(--card);border:1px solid var(--cardb,rgba(255,255,255,.3));border-radius:var(--r,26px);padding:16px;margin-bottom:16px;backdrop-filter:blur(var(--blur,28px)) saturate(190%) brightness(1.05);-webkit-backdrop-filter:blur(var(--blur,28px)) saturate(190%) brightness(1.05);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.55),inset 0 -1px 0 rgba(255,255,255,.12),inset 0 0 24px rgba(255,255,255,.07),var(--shadow,0 14px 40px rgba(0,0,0,.22))}
+.glass::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,0) 38%,rgba(255,255,255,0) 68%,rgba(255,255,255,.14) 100%)}
+h1{margin:10px 0 2px;font-size:32px;font-weight:800;letter-spacing:-.3px;text-align:start}
+.sub{text-align:start;color:var(--t2);margin:0 0 12px;font-size:15px}
+h2{margin:0 0 10px;font-size:20px;font-weight:700}
+input,select{width:100%;padding:12px 14px;margin:5px 0;border-radius:12px;border:1px solid var(--sep);background:var(--fill);color:var(--t);font:inherit;font-size:16px;outline:none;box-shadow:inset 0 1px 4px rgba(0,0,0,.16);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+input:focus{border-color:var(--tint);box-shadow:0 0 0 2px var(--tint-bg)}
+input::placeholder{color:var(--t2)}
+button{font:inherit;font-weight:600;font-size:15px;color:var(--tint);padding:10px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.3);background:var(--tint-bg);cursor:pointer;backdrop-filter:blur(12px) saturate(180%);-webkit-backdrop-filter:blur(12px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 3px 10px rgba(0,0,0,.12)}
+button:active{opacity:.55;transform:scale(.98)}
+.main{width:100%;margin-top:8px;padding:14px;font-size:17px;border-radius:16px;background:var(--main-bg);color:var(--main-t);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.6),inset 0 -10px 18px rgba(255,255,255,.1),0 8px 22px rgba(0,0,0,.2)}
+button.danger,.danger{color:var(--no)}
+button.danger{background:var(--no-bg)}
+#sw,#lg{display:inline-block;margin:0 0 14px;width:auto;padding:6px 12px;font-size:12px;border-radius:999px}
+.bal{font-size:44px;font-weight:800;text-align:center;margin:6px 0;letter-spacing:-.5px}
+.row{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:.5px solid var(--sep)}
+.row:last-child{border:0}
+.sm{font-size:13px;color:var(--t2)}
+.acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.acts button{padding:7px 12px;font-size:13px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.msg{text-align:center;margin:8px 0;min-height:22px;font-size:14px}
+.in{color:var(--ok)}.out{color:var(--no)}
+/* مؤثرات الخلفية */
+.cloud,.stars,.bub,.orb{display:none;position:fixed;z-index:0;pointer-events:none}
+html[data-fx=orbs] .orb{display:block}
+.orb{border-radius:50%;background:radial-gradient(circle,var(--c) 0%,transparent 70%);opacity:.75}
+.o1{--c:#ff5fa2;width:420px;height:420px;top:-80px;right:-60px}
+.o2{--c:#ffb84d;width:460px;height:460px;bottom:-120px;left:-80px}
+.o3{--c:#5f8bff;width:340px;height:340px;top:45%;left:30%}
+html[data-fx=clouds] .cloud{display:block}
+html[data-fx=stars] .stars{display:block}
+html[data-fx=bubbles] .bub{display:block}
+.cloud{left:0;width:200px;height:56px;background:rgba(255,255,255,.28);border-radius:60px;transform:translateX(-300px) scale(var(--s,1));animation:drift var(--d,60s) linear infinite;animation-delay:var(--l,0s)}
+html[data-theme=sky] .cloud{background:rgba(255,255,255,.92)}
+.cloud::before,.cloud::after{content:"";position:absolute;background:inherit;border-radius:50%}
+.cloud::before{width:90px;height:90px;top:-44px;left:28px}
+.cloud::after{width:70px;height:70px;top:-30px;left:96px}
+.c1{top:8%;--s:1.3;--d:80s;--l:-20s}
+.c2{top:30%;--s:.8;--d:55s;--l:-45s}
+.c3{top:58%;--s:1.6;--d:100s;--l:-60s}
+.c4{top:80%;--s:1;--d:70s;--l:-5s}
+@keyframes drift{from{transform:translateX(-320px) scale(var(--s,1))}to{transform:translateX(calc(100vw + 120px)) scale(var(--s,1))}}
+.stars{inset:0;background-image:radial-gradient(1.6px 1.6px at 12% 18%,#fff,transparent),radial-gradient(1.2px 1.2px at 33% 62%,#e9d5ff,transparent),radial-gradient(1.8px 1.8px at 55% 30%,#fff,transparent),radial-gradient(1.2px 1.2px at 74% 78%,#c7d2fe,transparent),radial-gradient(1.5px 1.5px at 88% 12%,#fff,transparent),radial-gradient(1.2px 1.2px at 22% 90%,#fff,transparent),radial-gradient(1.4px 1.4px at 64% 52%,#fde68a,transparent);background-size:280px 280px;animation:tw 4s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.45}to{opacity:1}}
+.bub{bottom:-80px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.1);animation:rise var(--d,16s) linear infinite;animation-delay:var(--l,0s)}
+.b1{left:8%;width:26px;height:26px;--d:14s}
+.b2{left:24%;width:44px;height:44px;--d:20s;--l:-6s}
+.b3{left:46%;width:18px;height:18px;--d:12s;--l:-3s}
+.b4{left:63%;width:36px;height:36px;--d:18s;--l:-10s}
+.b5{left:80%;width:22px;height:22px;--d:15s;--l:-8s}
+.b6{left:92%;width:52px;height:52px;--d:24s;--l:-14s}
+@keyframes rise{from{transform:translateY(0)}to{transform:translateY(-120vh)}}
+@media (prefers-reduced-motion:reduce){.cloud,.stars,.bub{animation:none}.cloud{transform:translateX(15vw) scale(var(--s,1))}}
+html[data-theme=mint],html[data-theme=rose],html[data-theme=midnight],html[data-theme=lava]{color-scheme:dark;--card:rgba(255,255,255,.14);--cardb:rgba(255,255,255,.3);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(0,0,0,.28);--fill:rgba(255,255,255,.13);--t:#fff;--t2:rgba(255,255,255,.72);--sep:rgba(255,255,255,.22);--tint:#fff;--tint-bg:rgba(255,255,255,.2);--main-bg:rgba(255,255,255,.3);--main-t:#fff;--ok:#7dffb2;--no:#ff8a9b;--no-bg:rgba(255,255,255,.16)}
+html[data-theme=mint]{--bg:#064e3b;--grad:linear-gradient(160deg,#022c22,#059669 60%,#6ee7b7)}
+html[data-theme=rose]{--bg:#4c0519;--grad:radial-gradient(60% 40% at 20% 10%,rgba(251,113,133,.6),transparent 70%),radial-gradient(60% 40% at 85% 85%,rgba(253,186,116,.5),transparent 70%)}
+html[data-theme=midnight]{--bg:#020617;--grad:radial-gradient(70% 40% at 50% 0%,rgba(56,189,248,.35),transparent 70%),linear-gradient(#020617,#0f172a);--main-bg:linear-gradient(135deg,#0ea5e9,#6366f1)}
+html[data-theme=lava]{--bg:#450a0a;--grad:linear-gradient(180deg,#450a0a,#b91c1c 55%,#f97316)}
+.nav{display:flex;gap:6px;padding:8px}.nav button{flex:1;padding:9px 6px;font-size:14px}.nav .on{background:var(--main-bg);color:var(--main-t)}
+.bd{background:var(--no);color:#000;border-radius:99px;padding:0 7px;font-style:normal;font-size:12px}
+input[type=checkbox]{width:auto;margin:0 6px 0 0}.chips label{display:inline-flex;align-items:center;margin:4px 12px 4px 0;font-size:14px}
+.n{padding:12px;margin-bottom:10px}
+#ml{max-height:46vh;overflow:auto;display:flex;flex-direction:column;gap:6px;padding:6px 2px}
+.b{max-width:80%;align-self:flex-start;padding:8px 12px;border-radius:18px;background:var(--fill);border:1px solid var(--sep);word-break:break-word}.b.me{align-self:flex-end;background:var(--tint-bg)}.b img{max-width:100%;border-radius:12px;display:block;margin-top:4px}
+.cmp{display:flex;gap:6px;align-items:center;margin-top:8px}.cmp input{margin:0}
+</style>
+<script>
+const THEMES=[["purple","Purple Clouds","clouds","#2e1065"],["classic","Classic","orbs","#1b1464"],["aurora","Aurora","none","#0b1020"],["ocean","Ocean","bubbles","#03045e"],["candy","Candy","none","#ffd6e5"],["space","Space","stars","#05010f"],["gold","Black Gold","none","#0b0b0b"],["sky","Cotton Sky","clouds","#7dd3fc"],["neon","Neon","none","#07060f"],["sunset","Sunset","clouds","#4a1942"],["mint","Mint Forest","bubbles","#064e3b"],["rose","Rose Gold","orbs","#4c0519"],["midnight","Midnight","stars","#020617"],["lava","Lava","clouds","#450a0a"]];
+function applyTheme(k){
+  let i=THEMES.findIndex(t=>t[0]===k);if(i<0)i=0;
+  const t=THEMES[i],h=document.documentElement;
+  h.setAttribute("data-theme",t[0]);h.setAttribute("data-fx",t[2]);
+  const m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute("content",t[3]);
+  
+  return i;
+}
+let themeKey="purple";try{themeKey=localStorage.getItem("bank_theme")||"purple"}catch(e){}
+applyTheme(themeKey);
+</script>
+</head>
+<body>
+
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><div class="stars"></div><div class="bub b1"></div><div class="bub b2"></div><div class="bub b3"></div><div class="bub b4"></div><div class="bub b5"></div><div class="bub b6"></div>
+<div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div><div class="cloud c4"></div>
+<input type="file" id="img" accept="image/*" hidden>
+<main>
+<h1 id="ttl" style="user-select:none">🏦 Teta Amal International Bank</h1>
+<div class="sub" id="sub">Family bank · max 10 accounts</div>
+<button id="sw" type="button" title="Switching Style">🎨 Switching Style</button>
+<button id="lg" type="button">🌐 العربية</button>
+<div id="app"><div class="glass msg">Loading...</div></div>
+</main>
+<script>
+(function(){
+  const b=document.getElementById("sw");
+  applyTheme(themeKey);
+  b.addEventListener("click",()=>{
+    const cur=THEMES.findIndex(t=>t[0]===document.documentElement.getAttribute("data-theme"));
+    const nx=THEMES[(cur+1)%THEMES.length][0];
+    applyTheme(nx);try{localStorage.setItem("bank_theme",nx)}catch(e){}
+  });
+})();
+</script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+const ADMIN_NAME="Bank Account",ADMIN_PASS="Bank@1628",BANK_ID="__bank",MAX=10;
+const S={accs:[],tx:[],msgs:[],groups:[],alerts:[],me:null,admin:false,msg:"",ok:true,ready:false,sel:"",pins:false,tab:"home",chat:"",pick:[],seen:0};
+let taps=0,tapT=null,db=null;
+const D={"Home":"الرئيسية","Alerts":"الإشعارات","Chat":"الشات","Sign in":"دخول","Choose your name":"اختار اسمك","Enter password":"ادخل كلمة السر","First time? Create a password for your account":"أول مرة؟ اعمل كلمة سر لحسابك","New password":"كلمة السر الجديدة","Confirm password":"أكّد كلمة السر","Reason: ":"السبب: ","Received from ":"وصلك تحويل من ","Sent to ":"حوّلت إلى ","📤 Share":"📤 مشاركة","⬇️ Download":"⬇️ تحميل","EGP":"جنيه","No transactions yet":"مفيش عمليات لسه","Sign out":"خروج","Your balance":"رصيدك","Negative balance: you owe the bank":"رصيدك بالسالب: عليك دين للبنك","Send money":"تحويل فلوس","Recipient name":"اسم المستلم","Amount":"المبلغ","Reason (optional)":"السبب (اختياري)","Send this amount to everyone":"حوّل نفس المبلغ للكل","My transactions":"عملياتي",'data-act="transfer">Send<':'data-act="transfer">حوّل<','data-act="send">Send<':'data-act="send">إرسال<',"Total money in bank:":"إجمالي الفلوس في البنك:","Accounts":"الحسابات","Broadcast":"إرسال للجميع","Pick recipients (none selected = everyone)":"اختار المستلمين (لو ما اخترتش حد = الكل)","Alert message":"نص الإشعار","🔔 Send alert":"🔔 إرسال إشعار","Amount for each person":"المبلغ لكل شخص","Bank password":"باسورد البنك","Passwords":"كلمات السر","🙈 Hide passwords":"🙈 إخفاء كلمات السر","👁️ Show passwords":"👁️ إظهار كلمات السر","New account":"حساب جديد","Name":"الاسم","Account password (optional)":"كلمة سر للحساب (اختياري)","Starting balance (default 10,000 EGP)":"رصيد مبدئي (الافتراضي 10,000 جنيه)","Create account":"إنشاء الحساب","Wallets":"المحافظ","Reason for add / withdraw / set (optional)":"السبب للإضافة / السحب / التحديد (اختياري)","No accounts yet":"مفيش حسابات لسه","All transactions":"كل العمليات","🔓 Password: ":"🔓 كلمة السر: ","No password":"من غير كلمة سر","🔒 Password protected (enter it before any action)":"🔒 محمي بكلمة سر (اكتبها قبل أي عملية)","➕ Add":"➕ إضافة","➖ Withdraw":"➖ سحب","= Set":"= تحديد","🔑 Clear password":"🔑 مسح كلمة السر","Delete":"حذف","Notifications":"الإشعارات","All transfers and bank alerts":"كل التحويلات وإشعارات البنك","· Browser notifications are blocked":"· إشعارات المتصفح محظورة","📢 Bank alert":"📢 إشعار من البنك","Nothing yet":"لسه مفيش حاجة",'placeholder="Message"':'placeholder="اكتب رسالة"',"No messages yet":"مفيش رسائل لسه","New group":"جروب جديد","Group name":"اسم الجروب","Create group":"إنشاء الجروب","Wrong password":"كلمة السر غلط","Wrong bank password":"باسورد البنك غلط","Password must be at least 3 characters":"كلمة السر لازم 3 حروف على الأقل","Passwords don't match":"كلمتين السر مش زي بعض","Enter a name":"اكتب الاسم","Limit reached: 10 accounts":"وصلنا للحد الأقصى 10 حسابات","That name already exists":"الاسم ده موجود بالفعل","Enter a valid amount":"اكتب مبلغ صحيح","No account with that name":"مفيش حساب بالاسم ده","You can't send money to yourself":"مينفعش تحوّل لنفسك","Enter a name and pick members":"اكتب الاسم واختار الأعضاء","Group created ✅":"تم إنشاء الجروب ✅","Write the alert first":"اكتب الإشعار الأول","Alert sent ✅":"تم إرسال الإشعار ✅","Deleted":"تم الحذف","Couldn't send image":"مقدرتش أبعت الصورة","Something went wrong: ":"حصلت مشكلة: "};
+const DK=Object.keys(D).sort((a,b)=>b.length-a.length);
+const RX=[[/^Sent ([\d,]+) EGP to everyone \((\d+)\) ✅/,"تم تحويل $1 جنيه للكل ($2) ✅"],[/^Sent ([\d,]+) EGP to (\d+) account\(s\) ✅/,"تم إرسال $1 جنيه إلى $2 حساب ✅"],[/^Sent ([\d,]+) EGP to (.+) ✅/,"تم تحويل $1 جنيه إلى $2 ✅"],[/^Account for (.+) created ✅/,"تم إنشاء حساب $1 ✅"],[/^(.+)'s balance updated ✅/,"تم تعديل رصيد $1 ✅"],[/^(.+)'s password cleared ✅/,"اتمسحت كلمة سر $1 ✅"],[/^Enter (.+)'s correct password first/,"اكتب كلمة سر $1 الصح الأول"]];
+function L(h){if(S.lang!=="ar")return h;h=h.replace(/Hi (.+?) 👋/g,"أهلاً $1 👋").replace(/placeholder="(.+?)&#39;s password"/g,'placeholder="كلمة سر $1"');DK.forEach(k=>{h=h.split(k).join(D[k])});return h}
+function Lm(m){if(S.lang!=="ar")return m;for(const r of RX)if(r[0].test(m))return m.replace(r[0],r[1]);return L(m)}
+function setLang(l){S.lang=l;try{localStorage.setItem("bk_lang",l)}catch(e){}const a=l==="ar",h=document.documentElement;h.lang=l;h.dir=a?"rtl":"ltr";
+  const t=a?"بنك تيته امال الدولي":"Teta Amal International Bank";$("#ttl").textContent="🏦 "+t;document.title=t;
+  $("#sub").textContent=a?"بنك العيلة · الحد الأقصى 10 حسابات":"Family bank · max 10 accounts";$("#lg").textContent=a?"🌐 English":"🌐 العربية";$("#sw").textContent=a?"🎨 تغيير الستايل":"🎨 Switching Style";render()}
+
+try{S.me=sessionStorage.getItem("bk_me")||null;S.admin=sessionStorage.getItem("bk_admin")==="1";S.seen=+localStorage.getItem("bk_seen")||0;S.lang=localStorage.getItem("bk_lang")||"en"}catch(e){}
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=n=>Number(n||0).toLocaleString("en-US");
+const save=()=>{try{S.me?sessionStorage.setItem("bk_me",S.me):sessionStorage.removeItem("bk_me");sessionStorage.setItem("bk_admin",S.admin?"1":"0")}catch(e){}};
+const say=(m,ok=true)=>{S.msg=m;S.ok=ok;render()};
+const byId=id=>S.accs.find(a=>a.id===id);
+const byName=n=>S.accs.find(a=>a.name.trim().toLowerCase()===n.trim().toLowerCase());
+const val=id=>($("#"+id)||{}).value||"";
+const ADM={id:"admin",name:"Bank"};
+const cur=()=>S.me?byId(S.me):(S.admin?ADM:null);
+const when=t=>t.t?new Date(t.t).toLocaleString(S.lang==="ar"?"ar-EG":"en-GB"):"";
+const ping=(t,b)=>{try{if(window.Notification&&Notification.permission==="granted")new Notification(t,{body:b})}catch(e){}};
+function feed(){const M=cur(),a=S.alerts.filter(x=>S.admin||x.to==="all"||(x.to||[]).includes(M.id)).map(x=>({...x,k:"al"}));return [...S.tx.map(x=>({...x,k:"tx"})),...a].sort((p,q)=>q.t-p.t).slice(0,50)}
+const unread=()=>cur()?feed().filter(x=>x.t>S.seen).length:0;
+
+function render(){
+  if(!S.ready)return;
+  const ae=document.activeElement;
+  if(ae&&ae.tagName==="INPUT"&&ae.id!=="cm")return;
+  const keep=ae&&ae.id==="cm"?ae.value:null;
+  const m=`<div class="msg" style="color:${S.ok?'var(--ok)':'var(--no)'}">${esc(Lm(S.msg))}</div>`;
+  const me=S.me?byId(S.me):null;
+  if(S.me&&!me){S.me=null;S.admin=false;save()}
+  let h;
+  if(me||S.admin){
+    if(S.tab==="notes"){S.seen=Date.now();try{localStorage.setItem("bk_seen",S.seen)}catch(e){}}
+    h=nav()+(S.tab==="notes"?notesView():S.tab==="chat"?chatView():me?userHome(me,m):bankHome(m));
+  }else h=loginView(m);
+  $("#app").innerHTML=L(h);
+  const l=$("#ml");if(l)l.scrollTop=l.scrollHeight;
+  if(keep!==null){const c=$("#cm");if(c){c.value=keep;c.focus()}}
+}
+const nav=()=>{const n=unread();return `<div class="glass nav">${[["home","🏠 Home"],["notes","🔔 Alerts"+(n?` <i class="bd">${n}</i>`:"")],["chat","💬 Chat"]].map(a=>`<button class="${S.tab===a[0]?"on":""}" data-act="tab" data-id="${a[0]}">${a[1]}</button>`).join("")}</div>`};
+function loginFields(){
+  if(S.sel===BANK_ID)return `<input id="lg-pin" type="password" placeholder="Enter password" autocapitalize="off" autocorrect="off" spellcheck="false">`;
+  const x=byId(S.sel);if(!x)return "";
+  if(x.pin)return `<input id="lg-pin" type="password" placeholder="Enter password" autocapitalize="off" autocorrect="off" spellcheck="false">`;
+  return `<div class="sm">First time? Create a password for your account</div><input id="lg-pin" type="password" placeholder="New password"><input id="lg-pin2" type="password" placeholder="Confirm password">`;
+}
+function loginView(m){
+  const opts=S.accs.map(a=>`<option value="${a.id}"${S.sel===a.id?" selected":""}>${esc(a.name)}</option>`).join("");
+  return `<div class="glass"><h2>Sign in</h2><select id="lg-acc"><option value="">Choose your name</option>${opts}<option value="${BANK_ID}"${S.sel===BANK_ID?" selected":""}>🏦 ${ADMIN_NAME}</option></select>${loginFields()}<button class="main" data-act="login">Sign in</button></div>${m}`;
+}
+function txRow(t,fid){
+  const inn=fid&&t.toId===fid;
+  const title=fid?(inn?`Received from ${t.from}`:`Sent to ${t.to}`):`${t.from} → ${t.to}`;
+  return `<div class="row" style="align-items:flex-start"><div><b>${esc(title)}</b>${t.note?`<div class="sm">Reason: ${esc(t.note)}</div>`:""}<div class="sm">${esc(when(t))}</div><div class="acts"><button data-act="share" data-id="${t.id}">📤 Share</button><button data-act="dl" data-id="${t.id}">⬇️ Download</button></div></div><b class="${fid?(inn?'in':'out'):''}" style="white-space:nowrap">${fid?(inn?'+':'−'):''}${fmt(t.amt)} EGP</b></div>`;
+}
+function txList(fid){
+  const l=S.tx.filter(t=>!fid||t.fromId===fid||t.toId===fid).slice(0,12);
+  return l.length?l.map(t=>txRow(t,fid)).join(""):`<div class="sm">No transactions yet</div>`;
+}
+function userHome(me,m){
+  const others=S.accs.filter(a=>a.id!==me.id).map(a=>`<option>${esc(a.name)}</option>`).join("");
+  const neg=me.balance<0;
+  return `<div class="glass"><div class="top"><b>Hi ${esc(me.name)} 👋</b><button data-act="logout">Sign out</button></div>
+  <div class="sm" style="text-align:center">Your balance</div><div class="bal" ${neg?'style="color:var(--no)"':""}>${fmt(me.balance)} EGP ${neg?"⚠️":"💰"}</div>${neg?'<div class="sm" style="text-align:center;color:var(--no)">Negative balance: you owe the bank</div>':""}</div>
+  <div class="glass"><h2>Send money</h2>
+  <input id="tr-n" list="names" placeholder="Recipient name"><datalist id="names">${others}</datalist>
+  <input id="tr-a" type="number" inputmode="numeric" min="1" placeholder="Amount">
+  <input id="tr-r" placeholder="Reason (optional)">
+  <button class="main" data-act="transfer">Send</button>
+  <button class="main" data-act="transferall" style="margin-top:6px">Send this amount to everyone</button>${m}</div>
+  <div class="glass"><h2>My transactions</h2>${txList(me.id)}</div>`;
+}
+function picker(){
+  return `<div class="chips">${S.accs.map(a=>`<label><input type="checkbox" class="rc" value="${a.id}"${S.pick.includes(a.id)?" checked":""}>${esc(a.name)}</label>`).join("")}</div>`;
+}
+function bankHome(m){
+  const rows=S.accs.map(a=>`<div class="row" style="flex-direction:column;align-items:stretch">
+   <div style="display:flex;justify-content:space-between"><b>${esc(a.name)}</b><b ${a.balance<0?'style="color:var(--no)"':""}>${fmt(a.balance)}</b></div>
+   <div class="sm">${S.pins?(a.pin?"🔓 Password: <b>"+esc(a.pin)+"</b>":"No password"):(a.pin?"🔒 Password protected (enter it before any action)":"No password")}</div>
+   ${a.pin?`<input id="p-${a.id}" type="password" placeholder="${esc(a.name)}'s password" autocomplete="off" style="margin:4px 0">`:""}
+   <div class="acts"><input id="v-${a.id}" type="number" placeholder="Amount" style="width:90px;margin:0">
+   <button data-act="add" data-id="${a.id}">➕ Add</button><button data-act="sub" data-id="${a.id}">➖ Withdraw</button><button data-act="set" data-id="${a.id}">= Set</button><button data-act="clr" data-id="${a.id}">🔑 Clear password</button><button class="danger" data-act="del" data-id="${a.id}">Delete</button></div></div>`).join("");
+  return `<div class="glass"><div class="top"><b>🏦 ${ADMIN_NAME}</b><button data-act="logout">Sign out</button></div>
+  <div class="sm">Total money in bank: <b>${fmt(S.accs.reduce((s,a)=>s+Number(a.balance||0),0))} EGP</b> · Accounts ${S.accs.length}/${MAX}</div></div>
+  <div class="glass"><h2>Broadcast</h2><div class="sm">Pick recipients (none selected = everyone)</div>${picker()}
+  <input id="b-msg" placeholder="Alert message"><button data-act="alert">🔔 Send alert</button>
+  <input id="b-amt" type="number" placeholder="Amount for each person"><input id="b-why" placeholder="Reason (optional)"><input id="b-pw" type="password" placeholder="Bank password" autocomplete="off">
+  <button class="main" data-act="bulk">Send money</button>${m}</div>
+  <div class="glass"><h2>Passwords</h2>${S.pins?'<button data-act="hidepins">🙈 Hide passwords</button>':'<input id="pinpw" type="password" placeholder="Bank password" autocomplete="off"><button data-act="showpins">👁️ Show passwords</button>'}</div>
+  <div class="glass"><h2>New account</h2><input id="n-name" placeholder="Name"><input id="n-pin" placeholder="Account password (optional)"><input id="n-bal" type="number" placeholder="Starting balance (default 10,000 EGP)"><button class="main" data-act="create">Create account</button></div>
+  <div class="glass"><h2>Wallets</h2><input id="why" placeholder="Reason for add / withdraw / set (optional)">${rows||'<div class="sm">No accounts yet</div>'}</div>
+  <div class="glass"><h2>All transactions</h2>${txList(null)}</div>`;
+}
+function notesView(){
+  const l=feed();
+  return `<div class="glass"><h2>Notifications</h2><div class="sm">All transfers and bank alerts${window.Notification&&Notification.permission==="denied"?" · Browser notifications are blocked":""}</div></div>`+
+  (l.map(x=>x.k==="al"?`<div class="glass n"><b>📢 Bank alert</b><div>${esc(x.text)}</div><div class="sm">${esc(when(x))}</div></div>`:`<div class="glass n">${txRow(x,null)}</div>`).join("")||`<div class="glass sm">Nothing yet</div>`);
+}
+const convs=()=>{const M=cur();const p=S.admin?S.accs:[ADM,...S.accs.filter(a=>a.id!==M.id)];const g=S.groups.filter(g=>S.admin||(g.members||[]).includes(M.id));return [...p.map(a=>[a.id,a.name]),...g.map(g=>[g.id,"👥 "+g.name])]};
+function chatView(){
+  const M=cur(),c=convs();if(!c.find(x=>x[0]===S.chat))S.chat=c[0]?c[0][0]:"";
+  const grp=S.groups.find(g=>g.id===S.chat);
+  const ms=S.msgs.filter(m=>grp?m.to===S.chat:((m.fromId===M.id&&m.to===S.chat)||(m.fromId===S.chat&&m.to===M.id))).sort((a,b)=>a.t-b.t).slice(-60);
+  return `<div class="glass"><select id="cv">${c.map(x=>`<option value="${x[0]}"${x[0]===S.chat?" selected":""}>${esc(x[1])}</option>`).join("")}</select>
+  <div id="ml">${ms.map(m=>`<div class="b${m.fromId===M.id?" me":""}">${grp&&m.fromId!==M.id?`<div class="sm">${esc(m.from)}</div>`:""}${m.text?esc(m.text):""}${m.img?`<img src="${esc(m.img)}">`:""}<div class="sm">${new Date(m.t).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"})}</div></div>`).join("")||'<div class="sm">No messages yet</div>'}</div>
+  <div class="cmp"><button data-act="pick">📷</button><input id="cm" placeholder="Message" autocomplete="off"><button data-act="send">Send</button></div></div>
+  ${S.admin?`<div class="glass"><h2>New group</h2><input id="g-name" placeholder="Group name">${picker()}<button class="main" data-act="group">Create group</button></div>`:""}`;
+}
+function mkTx(from,to,amt,note,id){
+  id=id||"t"+Date.now().toString(36)+Math.random().toString(36).slice(2,5);
+  return [db.collection("tx").doc(id),{from:from.name,fromId:from.id,to:to.name,toId:to.id,amt,note:note||"",t:Date.now()}];
+}
+const logTx=async(f,t,a,n)=>{const [r,d]=mkTx(f,t,a,n);await r.set(d)};
+// ===== Payroll: Thursday & Friday 3000 EGP at 11:00 Cairo time =====
+const PAY_AMT=3000,PAY_HOUR=11;let payBusy=false;
+function cairoNow(){const p={};new Intl.DateTimeFormat("en-GB",{timeZone:"Africa/Cairo",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",hourCycle:"h23"}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);return {y:+p.year,m:+p.month,d:+p.day,h:+p.hour}}
+async function claimPayout(key){const ref=db.collection("settings").doc("payouts");return db.runTransaction(async t=>{const d=await t.get(ref),paid=(d.exists&&d.data().paid)||{};if(paid[key])return false;t.set(ref,{paid:{[key]:Date.now()}},{merge:true});return true})}
+async function checkPayouts(){
+  if(payBusy||!db)return;payBusy=true;
+  try{
+    const n=cairoNow(),base=Date.UTC(n.y,n.m-1,n.d);
+    for(const k of [-1,0]){
+      const dd=new Date(base+k*864e5),wd=dd.getUTCDay();
+      if(wd!==4&&wd!==5)continue;if(k===0&&n.h<PAY_HOUR)continue;
+      const key=dd.toISOString().slice(0,10);if(!(await claimPayout(key)))continue;
+      const snap=await db.collection("accounts").get(),batch=db.batch(),now=Date.now(),note=wd===4?"Thursday salary":"Friday salary";
+      snap.docs.forEach((d,i)=>{const bal=Number(d.data().balance||0),debt=bal<0?-bal:0;
+        const txt=debt?note+" — debt deducted "+fmt(debt)+" = net "+fmt(PAY_AMT-debt)+" of "+fmt(PAY_AMT):note;
+        batch.update(d.ref,{balance:firebase.firestore.FieldValue.increment(PAY_AMT)});
+        batch.set(db.collection("tx").doc("pay"+key+"_"+d.id),{from:ADM.name,fromId:ADM.id,to:d.data().name,toId:d.id,amt:PAY_AMT,note:txt,t:now+i})});
+      await batch.commit();
+    }
+  }catch(e){console.error("payout:",e)}
+  payBusy=false;
+}
+function receipt(t){return new Promise(r=>{const c=document.createElement("canvas");c.width=600;c.height=760;const x=c.getContext("2d"),g=x.createLinearGradient(0,0,600,760);g.addColorStop(0,"#2e1065");g.addColorStop(1,"#a78bfa");x.fillStyle=g;x.fillRect(0,0,600,760);x.fillStyle="rgba(255,255,255,.16)";x.fillRect(30,30,540,700);x.fillStyle="#fff";x.textAlign="center";x.font="800 34px sans-serif";x.fillText("🏦 "+ADMIN_NAME,300,100);x.font="600 22px sans-serif";x.fillText("Transfer Receipt",300,140);x.font="800 58px sans-serif";x.fillText(fmt(t.amt)+" EGP",300,250);x.textAlign="left";[["From",t.from],["To",t.to],["Reason",t.note||"—"],["Date",when(t)],["Ref",t.id]].forEach((l,i)=>{x.font="500 20px sans-serif";x.globalAlpha=.7;x.fillText(l[0],70,340+i*74);x.globalAlpha=1;x.font="700 24px sans-serif";x.fillText(String(l[1]).slice(0,34),70,372+i*74)});c.toBlob(r,"image/png")})}
+async function shareTx(id,dl){
+  const t=S.tx.find(z=>z.id===id);if(!t)return;
+  const b=await receipt(t),f=new File([b],"receipt-"+id+".png",{type:"image/png"});
+  if(!dl&&navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],title:"Transfer receipt"});return}catch(e){if(e.name==="AbortError")return}}
+  const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=f.name;a.click();
+}
+function shrink(file){return new Promise((ok,no)=>{const fr=new FileReader();fr.onerror=no;fr.onload=()=>{const im=new Image();im.onerror=no;im.onload=()=>{const k=Math.min(1,720/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*k;c.height=im.height*k;c.getContext("2d").drawImage(im,0,0,c.width,c.height);ok(c.toDataURL("image/jpeg",.6))};im.src=fr.result};fr.readAsDataURL(file)})}
+const sendMsg=(text,img)=>{const M=cur();return db.collection("msgs").add({from:M.name,fromId:M.id,to:S.chat,text,img:img||"",t:Date.now()})};
+async function act(a,id){
+  try{
+    if(a==="tab"){S.tab=id;S.msg="";return render()}
+    if(a==="share"||a==="dl")return shareTx(id,a==="dl");
+    if(a==="pick")return $("#img").click();
+    if(a==="send"){const t=val("cm").trim();if(!t)return;$("#cm").value="";return sendMsg(t,"")}
+    if(a==="group"){const n=val("g-name").trim();if(!n||S.pick.length<1)return say("Enter a name and pick members",false);await db.collection("groups").add({name:n,members:S.pick,t:Date.now()});S.pick=[];return say("Group created ✅")}
+    if(a==="alert"){const t=val("b-msg").trim();if(!t)return say("Write the alert first",false);await db.collection("alerts").add({text:t,to:S.pick.length?S.pick:"all",t:Date.now()});$("#b-msg").value="";return say("Alert sent ✅")}
+    if(a==="bulk"){
+      if(val("b-pw")!==ADMIN_PASS)return say("Wrong bank password",false);
+      const v=Math.floor(Number(val("b-amt"))),list=S.accs.filter(x=>!S.pick.length||S.pick.includes(x.id));
+      if(!(v>0)||!list.length)return say("Enter a valid amount",false);
+      const FV=firebase.firestore.FieldValue,batch=db.batch(),why=val("b-why").trim()||"Deposit from bank";
+      list.forEach(x=>{batch.update(db.collection("accounts").doc(x.id),{balance:FV.increment(v)});const [r,d]=mkTx(ADM,x,v,why);batch.set(r,d)});
+      await batch.commit();return say("Sent "+fmt(v)+" EGP to "+list.length+" account(s) ✅");
+    }
+    if(a==="login"){
+      if(val("lg-acc")===BANK_ID){if(val("lg-pin").trim()!==ADMIN_PASS)return say("Wrong password",false);S.admin=true;S.me=null;save();S.msg="";return render()}
+      const x=byId(val("lg-acc"));if(!x)return say("Choose your name",false);
+      const p=val("lg-pin").trim();
+      if(x.pin){if(x.pin!==p)return say("Wrong password",false)}
+      else{if(p.length<3)return say("Password must be at least 3 characters",false);if(p!==val("lg-pin2").trim())return say("Passwords don't match",false);await db.collection("accounts").doc(x.id).update({pin:p})}
+      S.me=x.id;S.admin=false;save();S.msg="";return render();
+    }
+    if(a==="showpins"){if(val("pinpw")!==ADMIN_PASS)return say("Wrong bank password",false);S.pins=true;S.msg="";return render()}
+    if(a==="hidepins"){S.pins=false;return render()}
+    if(a==="logout"){S.me=null;S.admin=false;S.pins=false;S.tab="home";save();S.msg="";return render()}
+    if(a==="create"){
+      const name=val("n-name").trim(),pin=val("n-pin").trim(),bal=val("n-bal").trim()===""?10000:Math.max(0,Math.floor(Number(val("n-bal"))||0));
+      if(!name)return say("Enter a name",false);
+      if(S.accs.length>=MAX)return say("Limit reached: 10 accounts",false);
+      if(byName(name))return say("That name already exists",false);
+      await db.collection("accounts").doc("a"+Date.now().toString(36)).set({name,pin,balance:bal,t:Date.now()});
+      return say("Account for "+name+" created ✅");
+    }
+    if(a==="transfer"||a==="transferall"){
+      const me=byId(S.me),amt=Math.floor(Number(val("tr-a"))),why=val("tr-r").trim();
+      if(!(amt>0))return say("Enter a valid amount",false);
+      let list;
+      if(a==="transferall")list=S.accs.filter(x=>x.id!==me.id);
+      else{const to=byName(val("tr-n"));if(!to)return say("No account with that name",false);if(to.id===me.id)return say("You can't send money to yourself",false);list=[to]}
+      const FV=firebase.firestore.FieldValue,batch=db.batch();
+      batch.update(db.collection("accounts").doc(me.id),{balance:FV.increment(-amt*list.length)});
+      list.forEach(x=>{batch.update(db.collection("accounts").doc(x.id),{balance:FV.increment(amt)});const [r,d]=mkTx(me,x,amt,why);batch.set(r,d)});
+      await batch.commit();
+      return say("Sent "+fmt(amt)+" EGP to "+(list.length>1?"everyone ("+list.length+")":list[0].name)+" ✅");
+    }
+    const x=byId(id);
+    if(x&&x.pin&&val("p-"+id).trim()!==x.pin)return say("Enter "+x.name+"'s correct password first",false);
+    if(a==="clr"){await db.collection("accounts").doc(id).update({pin:""});return say(x.name+"'s password cleared ✅")}
+    if(a==="del"){if(!x||!confirm(S.lang==="ar"?"تحذف حساب "+x.name+"؟":"Delete "+x.name+"'s account?"))return;await db.collection("accounts").doc(id).delete();return say("Deleted")}
+    if(a==="add"||a==="sub"||a==="set"){
+      const v=Math.floor(Number(val("v-"+id)));if(!(v>=0)||isNaN(v))return say("Enter a valid amount",false);
+      const why=val("why").trim(),nb=a==="add"?x.balance+v:a==="sub"?Math.max(0,x.balance-v):v;
+      await db.collection("accounts").doc(id).update({balance:nb});
+      if(a==="add")await logTx(ADM,x,v,why||"Deposit by bank");
+      if(a==="sub")await logTx(x,ADM,Math.max(0,Math.min(v,x.balance)),why||"Withdrawal by bank");
+      return say(x.name+"'s balance updated ✅");
+    }
+  }catch(e){say("Something went wrong: "+(e&&e.message||e),false)}
+}
+document.addEventListener("click",e=>{
+  if(window.Notification&&Notification.permission==="default")Notification.requestPermission();
+  if(e.target.closest("#lg"))return setLang(S.lang==="ar"?"en":"ar");
+  if(e.target.closest("#ttl")){taps++;clearTimeout(tapT);tapT=setTimeout(()=>taps=0,2000);if(taps>=5){taps=0;render()}}
+  const b=e.target.closest("[data-act]");if(b)act(b.dataset.act,b.dataset.id);
+});
+document.addEventListener("change",async e=>{
+  const t=e.target;
+  if(t.id==="lg-acc"){S.sel=t.value;S.msg="";render()}
+  else if(t.id==="cv"){S.chat=t.value;render()}
+  else if(t.classList.contains("rc")){S.pick=t.checked?[...S.pick,t.value]:S.pick.filter(i=>i!==t.value)}
+  else if(t.id==="img"&&t.files[0]){try{await sendMsg("",await shrink(t.files[0]))}catch(er){say("Couldn't send image",false)}t.value=""}
+});
+document.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target.id==="cm")act("send")});
+setLang(S.lang);
+// ===== Firebase / Firestore =====
+let firebaseConfig={apiKey:"AIzaSyBw2BXQ0bubipE0PnTbHBa128zBV8EJPpc",authDomain:"bank-teta.firebaseapp.com",projectId:"bank-teta",storageBucket:"bank-teta.firebasestorage.app",messagingSenderId:"185129169349",appId:"1:185129169349:web:192fa3c7ba7fbd09ba5bac"};
+try{const c=JSON.parse(localStorage.getItem("fb_cfg")||"null");if(c)firebaseConfig=c}catch(e){}
+const showFatal=m=>{$("#app").innerHTML='<div class="glass msg" style="color:var(--no)">'+esc(m)+'<br><br><button id="s-reset">Reset setup</button></div>';const r=$("#s-reset");if(r)r.onclick=()=>{localStorage.removeItem("fb_cfg");location.reload()}};
+const FAMILY=["Hamza","Omar","Farah","Malak","Rana","Ahmed"];
+(async()=>{
+  try{
+    if(typeof firebase==="undefined")throw new Error("Firebase failed to load. Check your internet connection.");
+    firebase.initializeApp(firebaseConfig);db=firebase.firestore();
+    let seeded=false;const first={};
+    const watch=(name,key,onNew)=>db.collection(name).onSnapshot(snap=>{
+      S[key]=snap.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(a.t||0)-(b.t||0));
+      if(first[name]&&onNew)snap.docChanges().forEach(c=>{if(c.type==="added")onNew({id:c.doc.id,...c.doc.data()})});
+      first[name]=1;if(key==="tx")S.tx.reverse();render();
+    },e=>console.error(name+":",e));
+    db.collection("accounts").onSnapshot(snap=>{
+      if(snap.empty&&!seeded){seeded=true;FAMILY.forEach((name,i)=>db.collection("accounts").doc("family_"+name.toLowerCase()).set({name,pin:"",balance:0,t:Date.now()+i}).catch(e=>showFatal("Can't write to Firestore: "+e.message)))}
+      S.accs=snap.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(a.t||0)-(b.t||0));
+      S.ready=true;render();
+      if(!window._p){window._p=1;checkPayouts();setInterval(checkPayouts,60000);
+        watch("tx","tx",t=>{const M=cur();if(M&&(!t.id.startsWith("pay")||t.toId===M.id))ping("Bank Account",t.from+" sent "+fmt(t.amt)+" EGP to "+t.to)});
+        watch("alerts","alerts",a=>{const M=cur();if(M&&(S.admin||a.to==="all"||a.to.includes(M.id)))ping("📢 Bank alert",a.text)});
+        watch("groups","groups");
+        watch("msgs","msgs",m=>{const M=cur();if(!M||m.fromId===M.id)return;const g=S.groups.find(x=>x.id===m.to);if(m.to===M.id||(g&&(S.admin||g.members.includes(M.id))))ping("💬 "+m.from,m.text||"📷 Photo")});
+      }
+    },e=>showFatal("Error loading accounts: "+e.message+" — Firestore rules may be blocking reads"));
+  }catch(e){showFatal("Couldn't start the bank: "+(e&&e.message||e))}
+})();
+</script>
+</body>
+</html>
